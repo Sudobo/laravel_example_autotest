@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('autotest/example', 'AutoTestController@index')->name('autotest.index');
+Route::post('autotest/example', 'AutoTestController@save')->name('autotest.save');
